@@ -52,5 +52,3 @@ jobs:
           --deployment-group-name ${{ env.DEPLOYMENT_GROUP_NAME }} \
           --s3-location bucket=${{ env.BUCKET_NAME }},key=app.zip,bundleType=zip
 
-          --deployment-group-name YourDeploymentGroupName \
-          --s3-location bucket=your-s3-bucket-name,key=app.zip,bundleType=zip
