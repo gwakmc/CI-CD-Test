@@ -1,8 +1,11 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /home/ec2-user/cicd-project
+  - source: build/libs/
+    destination: /home/ec2-user/cicd-project/build/libs
+  - source: scripts/
+    destination: /home/ec2-user/cicd-project/scripts
+
 
 permission:
   - object: /home/ec2-user/cicd-project/
