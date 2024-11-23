@@ -7,7 +7,7 @@ on:
 
 env:
   PROJECT_NAME: cicd-project
-  BUCKET_NAME: cicd-bucket
+  BUCKET_NAME: gwak-cicd-bucket
   CODE_DEPLOY_APP_NAME: cicd-test
   DEPLOYMENT_GROUP_NAME: cicd-deploy
 
