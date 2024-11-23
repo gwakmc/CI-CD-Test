@@ -5,6 +5,12 @@ on:
     branches:
       - main
 
+env:
+  PROJECT_NAME: cicd-project
+  BUCKET_NAME: cicd-bucket
+  CODE_DEPLOY_APP_NAME: cicd-test
+  DEPLOYMENT_GROUP_NAME: cicd-deploy
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,6 +30,10 @@ jobs:
 
     - name: Build project
       run: ./gradlew build
+
+    - name: Make Zip File
+      run: zip -qq -r ./$GITHUB_SHA.zip .
+      shell: bash
 
     - name: Archive artifact
       run: zip -r app.zip .
