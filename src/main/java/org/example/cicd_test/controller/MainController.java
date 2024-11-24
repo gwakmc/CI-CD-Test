@@ -11,6 +11,6 @@ public class MainController {
     public ResponseEntity<?> hello(){
         return ResponseEntity.ok()
                 .header("hello", "cicd")
-                .body("World!");
+                .body("CICD");
     }
 }
