@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class MainController {
     @PostMapping("/hello")
     public ResponseEntity<?> hello(){
-        return ResponseEntity.ok("CICD TEST");
+        return ResponseEntity.ok("Hello");
     }
 }
